@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web PAEC - Luis Gonzalez</title>
+    <style>
+        /* Estilos generales simples */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8f6;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+        }
+
+        /* Encabezado */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(108, 221, 176);
+            padding: 15px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #1C2C5B;
+        }
+
+        /* Navegación */
+        .barra-navegacion {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: #333;
+            background-color: #FFC659;
+            padding: 8px 14px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .boton-nav:hover {
+            background-color: rgb(236, 51, 37);
+            color: white;
+        }
+
+        .boton-nav.activo {
+            background-color: #1C2C5B;
+            color: white;
+        }
+
+        .logo-pequeno {
+            width: 120px;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        /* Contenido Principal (Layout 2 columnas) */
+        main {
+            display: flex;
+            gap: 20px;
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        /* Barra Lateral (Aside) */
+        aside {
+            width: 30%;
+            background-color: rgb(108, 221, 176);
+            padding: 15px;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        aside h3 {
+            color: #1C2C5B;
+            margin-top: 0;
+        }
+
+        .img-lateral {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+
+        /* Sección Principal (Section) */
+        section {
+            width: 70%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        section h2 {
+            color: #1C2C5B;
+            margin-top: 0;
+        }
+
+        /* Galería de imágenes sencilla */
+        .galeria {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .imagen-normal {
+            width: calc(50% - 5px);
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        /* Pie de página */
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #6CABDD;
+            color: white;
+            text-align: center;
+        }
+
+        /* Ajustes para móviles */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            aside, section {
+                width: 100%;
+            }
+            .imagen-normal {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Sitio web PAEC</h1>
+            <nav class="barra-navegacion">
+                <a href="index.html" class="boton-nav activo">Información PAEC</a>
+                <a href="adopciones.html" class="boton-nav">Adopciones</a>
+                <a href="donaciones.html" class="boton-nav">Donaciones</a>
+            </nav>
+        </div>
+        <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=300&q=80" 
+             onerror="this.src='https://placehold.co/120x80/6cddb0/1c2c5b?text=PAEC'" 
+             alt="Logo PAEC" 
+             class="logo-pequeno">
+    </header>
+
+    <main>
+        <!-- Barra Lateral -->
+        <aside>
+            <h3>Bienestar Animal</h3>
+            <p><strong>¡Tú puedes marcar la diferencia!</strong></p>
+            <p>Adoptar una mascota transforma su vida y la tuya. Promovemos el cuidado y respeto hacia los animales.</p>
+
+            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=300&q=80" 
+                 onerror="this.src='https://placehold.co/200x120/FFC659/1c2c5b?text=Adopta'" 
+                 alt="Mascota feliz" 
+                 class="img-lateral">
+
+            <p><strong>Tenencia Responsable:</strong> Cuidar a tu mascota con alimento, salud y mucho amor.</p>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <section>
+            <h2>Presentación del Proyecto PAEC</h2>
+            
+            <p>El <strong>Proyecto PAEC (Protección y Atención a Especies Comunitarias)</strong> es una iniciativa enfocada en el rescate, cuidado y concientización sobre los animales en situación de calle o abandono.</p>
+
+            <h3>Propósito del Proyecto</h3>
+            <p>Nuestro objetivo principal es promover la tenencia responsable de mascotas, impulsar campañas de esterilización y fomentar la adopción en lugar de la compra.</p>
+
+            <h3>Concientización sobre la Mascota</h3>
+            <ul>
+                <li><strong>Vacunación y salud:</strong> Mantén al día las vacunas de tu compañero.</li>
+                <li><strong>Esterilización:</strong> Previene la sobrepoblación y abandono.</li>
+                <li><strong>Amor y respeto:</strong> Un animal de compañía es un compromiso para toda la vida.</li>
+            </ul>
+
+            <h3>Galería PAEC</h3>
+            <div class="galeria">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=400&q=80" 
+                     onerror="this.src='https://placehold.co/300x200/FFC659/ffffff?text=Perro'" 
+                     alt="Perro en adopción" 
+                     class="imagen-normal">
+                <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=400&q=80" 
+                     onerror="this.src='https://placehold.co/300x200/6cddb0/ffffff?text=Gato'" 
+                     alt="Gato protegido" 
+                     class="imagen-normal">
+                <img src="https://images.unsplash.com/photo-1583511655826-05700d52f4d9?auto=format&fit=crop&w=400&q=80" 
+                     onerror="this.src='https://placehold.co/300x200/6cabdd/ffffff?text=Rescate'" 
+                     alt="Atención médica" 
+                     class="imagen-normal">
+                <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80" 
+                     onerror="this.src='https://placehold.co/300x200/1c2c5b/ffffff?text=Adopcion'" 
+                     alt="Mascota con familia" 
+                     class="imagen-normal">
+            </div>
+        </section>
+    </main>
+
+    <footer> 
+        <p>Página creada por Luis González - Proyecto PAEC</p>
+        <p>Juntos por el bienestar de los animales.</p>
+    </footer>
+
+</body>
+</html>
