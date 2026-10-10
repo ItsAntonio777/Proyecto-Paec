@@ -1,0 +1,240 @@
+/* ===================================================
+   PROYECTO PAEC - ESTILOS GLOBALES COMPLETO
+   =================================================== */
+
+   body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(108, 221, 176);
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #1C2C5B;
+    font-size: 24px;
+}
+
+header .logo-pequeno {
+    width: 150px !important;
+    max-width: 150px !important;
+    height: auto !important;
+    border-radius: 6px;
+}
+
+/* Navegación */
+.barra-navegacion {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.boton-nav {
+    text-decoration: none;
+    color: #1C2C5B;
+    background-color: #FFC659;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-nav:hover,
+.boton-nav.activo {
+    background-color: #1C2C5B;
+    color: #ffffff;
+}
+
+/* Estructura Principal */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+aside {
+    width: 28%;
+    background-color: rgb(108, 221, 176);
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+aside h3 {
+    margin-top: 0;
+    color: #1C2C5B;
+}
+
+aside img {
+    width: 100% !important;
+    max-width: 200px !important;
+    height: auto !important;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+section {
+    width: 72%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+}
+
+section h2 {
+    color: #1C2C5B;
+    border-bottom: 2px solid rgb(108, 221, 176);
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+.bloque-info {
+    background-color: #eef9f5;
+    border-left: 4px solid #1C2C5B;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 0 6px 6px 0;
+}
+
+/* ===================================================
+   DISEÑO EN CAJITAS / TARJETAS (ADOPCIONES Y DONACIONES)
+   =================================================== */
+
+.galeria-adopciones, 
+.lista-necesidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Cajitas cuadradas de Donaciones y Mascotas */
+.tarjeta-mascota, 
+.tarjeta-categoria {
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    width: 48%;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #fcfcfc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tarjeta-mascota {
+    text-align: center;
+}
+
+.tarjeta-categoria h3 {
+    margin-top: 0;
+    color: #1C2C5B;
+    border-bottom: 2px solid rgb(108, 221, 176);
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.tarjeta-categoria ul {
+    padding-left: 18px;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+.tarjeta-categoria p {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+/* Fotos de mascotas */
+.tarjeta-mascota img {
+    width: 100% !important;
+    height: 180px !important;
+    object-fit: cover !important;
+    border-radius: 6px;
+}
+
+.boton-adoptar {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #FFC659;
+    color: #1C2C5B;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.boton-adoptar:hover {
+    background-color: #1C2C5B;
+    color: #ffffff;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #6CABDD;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    aside, section, .tarjeta-mascota, .tarjeta-categoria {
+        width: 100%;
+    }
+}
+aside {
+    width: 28%;
+    background-color: rgb(108, 221, 176);
+    padding: 18px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+aside h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #1C2C5B;
+    font-size: 18px;
+}
+
+/* La imagen abarca todo el ancho del aside */
+aside img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 10px 0 20px 0;
+    object-fit: contain;
+}
+
+/* Texto inferior */
+aside p {
+    margin: 0;
+    color: #1C2C5B;
+    font-size: 15px;
+}

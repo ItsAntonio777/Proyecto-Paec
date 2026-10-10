@@ -4,151 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donaciones y Suministros - PAEC</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: rgb(108, 221, 176);
-            padding: 10px 20px;
-        }
-
-        .barra-navegacion {
-            display: flex;
-            gap: 15px;
-            margin-top: 10px;
-        }
-
-        .boton-nav {
-            text-decoration: none;
-            color: whitesmoke;
-            background-color: #FFC659;
-            padding: 6px 12px;
-            border-radius: 4px;
-            font-size: 14px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-
-        .boton-nav:hover {
-            background-color: rgb(236, 51, 37);
-            color: aliceblue;
-        }
-
-        .boton-nav.activo {
-            background-color: #1C2C5B;
-            color: whitesmoke;
-        }
-
-        .logo-pequeno {
-            width: 120px;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        main {
-            display: flex;
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        aside {
-            width: 25%;
-            background-color: rgb(108, 221, 176);
-            padding: 15px;
-            border-radius: 8px;
-            height: fit-content;
-        }
-
-        aside h3 {
-            margin-top: 0;
-            color: #1C2C5B;
-        }
-
-        section {
-            width: 75%;
-            background-color: rgb(255, 255, 255);
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .bloque-info {
-            background-color: #f0f7f4;
-            border-left: 5px solid #1C2C5B;
-            padding: 12px 15px;
-            margin-bottom: 20px;
-            border-radius: 0 6px 6px 0;
-        }
-
-        .lista-necesidades {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .tarjeta-categoria {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            width: 47%;
-            box-sizing: border-box;
-            padding: 15px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        .tarjeta-categoria h3 {
-            margin-top: 0;
-            color: #1C2C5B;
-            border-bottom: 2px solid #6CDDB0;
-            padding-bottom: 5px;
-        }
-
-        .tarjeta-categoria ul {
-            padding-left: 20px;
-            color: #444;
-            line-height: 1.6;
-        }
-
-        footer {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #6CABDD;
-            color: white;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 5px 0;
-        }
-
-        @media (max-width: 768px) {
-            main {
-                flex-direction: column;
-            }
-            aside, section {
-                width: 100%;
-            }
-            .tarjeta-categoria {
-                width: 100%;
-            }
-        }
-    </style>
+    <!-- Vinculación al archivo CSS externo -->
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
     <header>
         <div>
-            <h1 style="margin: 0; color: #1C2C5B;">Sitio web PAEC</h1>
+            <h1>Sitio web PAEC</h1>
             <nav class="barra-navegacion">
                 <a href="index.html" class="boton-nav">Información PAEC</a>
                 <a href="adopciones.html" class="boton-nav">Adopciones</a>
@@ -160,23 +23,22 @@
 
     <main>
         <aside>
-              <h3>Barra lateral</h3>
-                <p>¡You Got This!</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStAccueqGUTr4jMdExN0gwZ1bEcQxMoZ-QV5JCxiU32A&s=10" alt="logo de mi sitio web" class="logo-pequeno">
-
+            <h3>Adidas</h3>
+            <img src="img/adidas.png" alt="Logo Adidas">
+            <p>¡You Got This!</p>
         </aside>
 
         <section>
             <h2>Donaciones y Suministros Necesarios</h2>
             
             <div class="bloque-info">
-                <p style="margin: 0;"><strong>¿Cómo puedes ayudar?</strong> El Refugio PAEC se sostiene mediante aportaciones en especie e insumos. A continuación, compartimos la lista actualizada de necesidades prioritarias para el cuidado de nuestros rescates.</p>
+                <p><strong>¿Cómo puedes ayudar?</strong> El Refugio PAEC se sostiene mediante aportaciones en especie e insumos. A continuación, compartimos la lista actualizada de necesidades prioritarias para el cuidado de nuestros rescates.</p>
             </div>
 
             <div class="lista-necesidades">
-                <!-- Categoria 1 -->
+                <!-- Categoría 1 -->
                 <div class="tarjeta-categoria">
-                    <h3> Alimentos</h3>
+                    <h3>Alimentos</h3>
                     <ul>
                         <li>Croquetas para perro (cachorro y adulto).</li>
                         <li>Croquetas para gato (gatito y adulto).</li>
@@ -186,9 +48,9 @@
                     </ul>
                 </div>
 
-                <!-- Categoria 2 -->
+                <!-- Categoría 2 -->
                 <div class="tarjeta-categoria">
-                    <h3> Cobijas y Confort</h3>
+                    <h3>Cobijas y Confort</h3>
                     <ul>
                         <li>Mantas y cobijas limpias.</li>
                         <li>Toallas en buen estado.</li>
@@ -197,9 +59,9 @@
                     </ul>
                 </div>
 
-                <!-- Categoria 3 -->
+                <!-- Categoría 3 -->
                 <div class="tarjeta-categoria">
-                    <h3> Artículos de Limpieza</h3>
+                    <h3>Artículos de Limpieza</h3>
                     <ul>
                         <li>Cloro, pino y desinfectantes.</li>
                         <li>Detergente en polvo o líquido.</li>
@@ -209,15 +71,13 @@
                     </ul>
                 </div>
 
-                <!-- Categoria 4 -->
+                <!-- Categoría 4 -->
                 <div class="tarjeta-categoria">
-                    <h3> Informacion centro de acopio</h3>
-                    <ul>
-      <p><strong>Ubicación:</strong><br>Av. Principal #123, Colonia Centro.</p>
-            <p><strong>Horario de Recepción:</strong><br>Lunes a Sábado: 9:00 am - 5:00 pm</p>
-            <p><strong>Contacto:</strong><br>donaciones@paec.org<br>Tel: (555) 123-4567</p>
-            <p><i>¡Cualquier aporte, por pequeño que sea, transforma vidas!</i></p>
-                    </ul>
+                    <h3>Información Centro de Acopio</h3>
+                    <p><strong>Ubicación:</strong><br>Av. Principal #123, Colonia Centro.</p>
+                    <p><strong>Horario de Recepción:</strong><br>Lunes a Sábado: 9:00 am - 5:00 pm</p>
+                    <p><strong>Contacto:</strong><br>donaciones@paec.org<br>Tel: (555) 123-4567</p>
+                    <p><i>¡Cualquier aporte, por pequeño que sea, transforma vidas!</i></p>
                 </div>
             </div>
         </section>
